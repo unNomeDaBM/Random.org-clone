@@ -8,6 +8,7 @@
             <span class="sub-title">True Random Number Service</span>
         </div>
     </div>
+    <hr>
 </template>
 
 <script>
