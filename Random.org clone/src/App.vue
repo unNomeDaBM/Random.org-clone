@@ -32,8 +32,12 @@ import TitleComponent from './components/Sigleton Components/TitleComponent.vue'
     font-family: sans-serif;
   }
 
+  a{
+    text-decoration: none;
+  }
+
   .content{
     width: 800px;
-    background-color: #c3c3c3; /* To remove later*/ 
+    background-color: #c3c3c3; /* To remove later */   
   }
 </style>
