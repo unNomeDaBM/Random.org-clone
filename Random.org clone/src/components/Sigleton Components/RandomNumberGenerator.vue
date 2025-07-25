@@ -6,30 +6,41 @@
         </div>
         <div class="min-container">
             Min: 
-            <input type="number" name="" id="">
+            <input type="number" v-model="min">
         </div>
         <div class="max-container">
             Max: 
-            <input type="number" name="" id="">
+            <input type="number" v-model="max">
         </div>
-        <button type="button">Generate</button>
+        <button type="button" @click="generateRandomNumber">Generate</button>
         <div class="result-container">
             Result:
-            <div class="result">12</div>
+            <div class="result">{{ result }}</div>
         </div>
     </div>
 </template>
 
 <script>
     export default{
-        
+        data(){
+            return {
+                min: 1,
+                max: 100,
+                result: null
+            }
+        },
+        methods:{
+            generateRandomNumber(){
+                this.result = Math.floor(Math.random() * (this.max+1 - this.min) + this.min);
+            }
+        }
     }
 </script>
 
 <style scoped>
     .container{
         border: 1px solid #CCCCFF;
-        height: 160px;
+        height: 180px;
         width: 160px;
 
         display: flex;
@@ -42,10 +53,7 @@
                 margin: 0;
             }
 
-            display: flex;
-            flex-direction: row;
             align-items: center;
-            gap: 10px;
 
             font-size: 12px;
             color: #777;
@@ -53,6 +61,11 @@
             input{
                 width: 84px;
                 font-size: 0.82rem;
+            }
+        }
+        div.min-container{
+            input{
+                margin: 0 3px
             }
         }
 
@@ -66,12 +79,15 @@
             width: 71px;
         }
 
-        .result-cotainer{
-            display: block;
+        .result-container{
 
             .result{
+                padding: 7px 0;
                 background-color: #CCCCFF;
-                height: 4px;
+                color: black;
+                text-align: center;
+                font-size: 1.4rem;
+                height:max-content
             }
         }
     }

@@ -20,7 +20,7 @@
                         the Internet.  The randomness comes from atmospheric noise, which
                         for many purposes is better than the pseudo-random number
                         algorithms typically used in computer programs.  People use RANDOM.ORG for holding drawings, lotteries and sweepstakes, to drive online games, for scientific applications and for art and music.
-                        The service has existed since 1998 and was built by <a href="mads/">Dr Mads Haahr</a> of the <a href="http://www.scss.tcd.ie/">School of Computer Science
+                        The service has existed since 1998 and was built by <a href="https://www.random.org/mads/">Dr Mads Haahr</a> of the <a href="http://www.scss.tcd.ie/">School of Computer Science
                         and Statistics</a> at <a href="http://www.tcd.ie/">Trinity College,
                         Dublin</a> in Ireland.  Today, RANDOM.ORG is operated by <a href="https://www.random.org/company/">Randomness and Integrity Services Ltd</a>.
                     </p>
